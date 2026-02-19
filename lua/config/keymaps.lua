@@ -18,10 +18,5 @@ local function toggle_virtual_text()
   local config = vim.diagnostic.config()
   local current = config.virtual_text
   vim.diagnostic.config({ virtual_text = not current })
-  vim.notify(
-    (not current and "Enabled" or "Disabled") .. " virtual text diagnostics",
-    vim.log.levels.INFO,
-    { title = "Diagnostics" }
-  )
 end
 vim.keymap.set("n", "<leader>ue", toggle_virtual_text, { desc = "Toggle virtual text diagnostics" })
