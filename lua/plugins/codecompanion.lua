@@ -13,7 +13,7 @@ return {
             },
             schema = {
               model = {
-                default = "gpt-oss-120b",
+                default = "qwen-3-235b-a22b-instruct-2507",
               },
             },
           })
