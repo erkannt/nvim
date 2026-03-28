@@ -6,7 +6,6 @@
 vim.keymap.del("n", "<leader>L")
 vim.keymap.del("n", "<leader>l")
 vim.keymap.set("n", "<leader>L", "<cmd>Lazy<cr>", { desc = "Lazy" })
-vim.keymap.set("n", "<leader>r", "<cmd>checktime<cr>", { desc = "Check for external buffer changes" })
 
 -- CodeCompanion
 vim.keymap.set("n", "<leader>l", "<cmd>CodeCompanionChat Toggle<cr>", { desc = "Toggle chat buffer" })
