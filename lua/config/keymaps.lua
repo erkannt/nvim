@@ -12,6 +12,10 @@ vim.keymap.set("n", "<leader>l", "<cmd>CodeCompanionChat Toggle<cr>", { desc = "
 vim.keymap.set("v", "<leader>l", ":'<, '>CodeCompanion<cr> ", { desc = "Inline assistant" })
 vim.keymap.set("n", "<leader>ln", "<cmd>CodeCompanionChat<cr>", { desc = "New chat buffer" })
 
+-- gen.nvim (LLM generation)
+vim.keymap.set({ "n", "v" }, "<leader>g", ":Gen<CR>", { desc = "Generate with LLM" })
+vim.keymap.set("n", "<leader>gg", ":Gen Chat<CR>", { desc = "Chat with LLM" })
+
 -- Diagnostics toggle
 local function toggle_virtual_text()
   local config = vim.diagnostic.config()
